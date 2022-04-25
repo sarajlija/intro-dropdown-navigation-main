@@ -2,6 +2,7 @@ $color: #ffffff;
 $color-hover-text: var(--bs-orange);
 $font-text: 1.1rem;
 $bg-color:var(--bs-grey-100);
+$bg-btn:#ffffff;
 $max-width: 1200px;
 body {
   
@@ -43,8 +44,12 @@ body {
             li.nav-item1 {
               display: flex;
               align-items: center;
-              margin:0 1rem;
-               list-style: none;
+              margin:0 1rem;              
+              list-style: none;
+              .nav-link1{
+                color: rgb(34, 29, 29);
+
+                }
                .arrow-button {
                  background-color: transparent;
                  border: 0;
@@ -52,6 +57,8 @@ body {
                } 
                 .close-menu {
                 display:none;
+                opacity: 0;
+               
                 }
                 .show-menu {
                   top:4rem;
@@ -61,8 +68,10 @@ body {
                   background-color: #ffffff;
                   border: none;
                   border-radius: 0.4rem;
+                  opacity: 1;
                   height: auto;
                   z-index: 200;
+                   transition: all 400ms;
                   .drop-item {
                     padding: 0.5rem 0.3rem;
                     text-decoration: none;
@@ -75,6 +84,11 @@ body {
                 a {
                   text-decoration:none;
                 }
+            }
+            li.nav-item  {
+              .nav-link {
+              color: rgb(34, 29, 29);
+              }
             }            
         }
     @media (max-width:768px) {
@@ -84,15 +98,27 @@ body {
     }
    
     .btn-group {
+      width: 30%;
       display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 0 auto;
 
       .btn {
+        width: 50%;
         box-shadow: none;
+        &:hover {
+          background-color: #000000;
+          color: $bg-btn;
+          border-radius: 10px;
+        }
       }
       .btn-primary {
-        border-radius: 9px;
-        background-color: rgb(0, 195, 255);
-        border: 0;
+        width:50% ;
+        border-radius: 10px;
+        color: rgb(34, 29, 29);
+        background-color: $bg-btn;
+        border: 1px solid rgb(34, 29, 29);
         box-shadow: none;
         &:focus {       
           border: 0;
@@ -175,6 +201,8 @@ p {
   }
 }
 
+/*MODAL*/
+
 #modal-1 { 
  .modal-content {
         min-height: 100vh;
@@ -184,18 +212,19 @@ p {
             justify-content: start;
             align-items: flex-start;
 
-             .nav {
-                          
-            
+             .nav {                          
+            width: 100%;
                 li.nav-item1 {
                   display: flex;
                   flex-direction: column;
                   align-items: flex-start;
+                  padding: 1rem 0;
                   margin: 0 1rem;
                   list-style: none;
-            
+           
                   .nav-link1 {
                     text-decoration: none;
+                    color: rgb(34, 29, 29);
                     .arrow-button {
                       background-color: transparent;
                       border: 0;
@@ -209,7 +238,7 @@ p {
             
                   .show-menu {
                     display: flex;
-                    width: 30vw;
+                    width: 50vw;
                     position: relative;
                     flex-direction: column;
                     background-color: #ffffff;
@@ -232,6 +261,37 @@ p {
                             }*/
                   }
                 }
+              }
+              .btn-group {
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0 auto;
+                .btn {
+                  width: 100%;
+                  margin: 0.6rem 0;
+                  border-radius: 10rem;
+                  &:hover {
+                    background-color: #000000;
+                    color: $bg-btn;
+                  }
+
+                }
+                .btn-primary {
+                  border-radius: 10px;
+                  background-color: $bg-btn;
+                  color: rgb(34, 29, 29);
+                  border: 1px solid rgb(34, 29, 29);
+                  border-radius: 10rem;
+                  box-shadow: none;
+                  &:hover { 
+                    background-color: #000000; 
+                    color: $bg-btn;     
+                    border: 0;
+                  }
+                }
+                
               }
 
           }
