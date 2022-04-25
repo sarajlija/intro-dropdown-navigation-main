@@ -1,0 +1,60 @@
+@media (max-width: 768px) {
+  .btn__register {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn__login {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .div__wrapper {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 567px) {
+  .div__wrapper {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    width: 90%;
+  }
+}
+
+@media (max-width: 567px) {
+  h1 {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  p {
+    width: 70%;
+  }
+}
+
+@media (max-width: 300px) {
+  header {
+    margin-top: 0;
+  }
+}
+
+.btn-close {
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  padding: .25em .25em;
+  color: #000;
+  background: transparent url("../../assets/img/icon-close-menu.svg") center/1em auto no-repeat;
+  border: 0;
+  border-radius: .25rem;
+  opacity: .5;
+}
+
