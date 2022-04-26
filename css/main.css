@@ -277,6 +277,16 @@ header .hero__img .image-desktop {
   margin-right: 2rem;
 }
 
+#modal-1 {
+  width: 70%;
+  -webkit-transform: perspective(0px) translate(43%);
+          transform: perspective(0px) translate(43%);
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  margin-top: -30px;
+  display: block;
+}
+
 #modal-1 .modal-content {
   min-height: 100vh;
 }
@@ -345,7 +355,7 @@ header .hero__img .image-desktop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50vw;
+  width: 60vw;
   position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
