@@ -1,0 +1,15 @@
+@import "variables";
+
+body {
+    background-color: $bg-color;
+    font-family: 'Epilogue'
+    sans-serif;
+    font-weight: 500;
+    font-size: $font-text;
+}
+h1 {
+    font-size: 6rem;
+    font-weight: 700;
+
+}
+

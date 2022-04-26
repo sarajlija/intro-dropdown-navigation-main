@@ -1,0 +1,111 @@
+@import "variables";
+
+#modal-1 {
+    .modal-content {
+        min-height: 100vh;
+
+        .modal-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: flex-start;
+
+            .nav {
+                width: 100%;
+
+                li.nav-item1 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 1rem 0;
+                    margin: 0 1rem;
+                    list-style: none;
+
+                    .nav-link1 {
+                        text-decoration: none;
+                        color: $color-text;
+
+                        .arrow-button {
+                            background-color: transparent;
+                            border: 0;
+                            outline: none;
+                        }
+
+                        .arrow-up {
+                            transform: rotate(180deg);
+                            transition: transform 0.4s;
+                        }
+                    }
+
+                    .close-menu {
+                        display: none;
+                    }
+
+                    .show-menu {
+                        display: flex;
+                        width: 50vw;
+                        position: relative;
+                        flex-direction: column;
+                        background-color: #ffffff;
+                        border: none;
+                        border-radius: 0.4rem;
+                        height: auto;
+                        z-index: 200;
+                        text-align: center;
+
+                        .drop-item {
+                            padding: 1rem 0.3rem;
+                            font-size: 500;
+                            text-decoration: none;
+                            color: $color-text;
+                            font-size: inherit;
+
+                            img {
+                                margin-right: 6px;
+                            }
+
+                        }
+
+                    }
+                }
+            }
+
+            .btn-group {
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0 auto;
+
+                .btn {
+                    width: 100%;
+                    margin: 0.6rem 0;
+                    border-radius: 10rem;
+                    font-size: 500;
+                    &:hover {
+                        background-color: #000000;
+                        color: $bg-btn;
+                    }
+
+                }
+
+                .btn-primary {
+                    border-radius: 10px;
+                    background-color: $bg-btn;
+                    font-size: 500;
+                    color: rgb(34, 29, 29);
+                    border: 1px solid rgb(34, 29, 29);
+                    border-radius: 10rem;
+                    box-shadow: none;
+
+                    &:hover {
+                        background-color: #000000;
+                        color: $bg-btn;
+                        border: 0;
+                    }
+                }
+            }
+        }
+
+    }
+}

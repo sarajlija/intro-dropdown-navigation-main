@@ -12,3 +12,11 @@ navbarNav.forEach(function (btn) {
 
     });
 });
+
+//const btns = document.querySelectorAll(".question-btn");
+navbarNav.forEach(function (bt) {
+    bt.addEventListener("click", function (e) {
+        const current = e.currentTarget;
+        current.classList.toggle("arrow-up");
+    });
+})

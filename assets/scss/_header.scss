@@ -1,0 +1,77 @@
+@import "variables";
+
+header {
+    margin: 6rem 0;
+
+    .hero__img {
+        .image-mobile {
+            display: none;
+
+        }
+
+        .image-desktop {
+            display: block;
+        }
+    }
+
+    @media (max-width:768px) {
+        .hero__img {
+            margin-bottom: 2rem;
+
+            .image-mobile {
+                display: block;
+
+            }
+
+            .image-desktop {
+                display: none;
+            }
+        }
+    }
+}
+
+.link-light {
+    padding: 6px 17px;
+
+}
+
+.link-light:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.div__wrapper {
+    margin-top: 8rem;
+
+    h1 {
+        font-size: 4.5rem;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .link-light {
+        margin-bottom: 2rem;
+
+    }
+
+}
+
+@media (max-width:768px) {
+    .div__wrapper {
+        margin-top: 2.5rem;
+    }
+}
+
+.div__brends {
+    width: 100%;
+
+    div {
+
+        margin-right: 2rem
+    }
+}
