@@ -1,11 +1,7 @@
 @import "variables";
 
 #modal-1 {
-    width: 70%;
-    transform: perspective(0px) translate(43%);
-    transform-origin: center top;
-    margin-top: -30px;
-    display: block;
+  
     
     .modal-content {
         min-height: 100vh;
@@ -49,7 +45,7 @@
 
                     .show-menu {
                         display: flex;
-                        width: 60vw;
+                        width: 50vw;
                         position: relative;
                         flex-direction: column;
                         background-color: #ffffff;
